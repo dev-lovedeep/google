@@ -129,6 +129,7 @@ main {
 
 .btn-group {
     margin: 2em 0;
+    display: flex;
     justify-content: center;
 }
 
@@ -140,6 +141,7 @@ main {
     border: 0;
     margin: 0 0.5em;
     cursor: pointer;
+
 }
 
 .language {
