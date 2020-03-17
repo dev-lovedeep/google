@@ -77,17 +77,23 @@ main {
 
 .input-container {
     margin-top: 1.5em;
+    position: relative;
+}
+
+#search-logo,
+#mike-logo {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
 }
 
 #search-logo {
-    position: absolute;
-    transform: translate(60%, 60%);
+    left: 12px;
 }
 
 #mike-logo {
-    position: absolute;
-    transform: translate(-100%, 25%);
     cursor: pointer;
+    right: 0;
 }
 
 #mike-logo>img {
