@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ################### decorative classes############## */
@@ -33,10 +35,11 @@ header {
 }
 
 .header-links {
+    color: black;
     margin: 0 0.5em;
 }
 
-.header-links:active,
+.header-links:focus,
 .header-links:hover {
 
     text-decoration: underline;
@@ -59,7 +62,7 @@ main {
     /* background-color: lightblue; */
     display: grid;
     place-content: center;
-    height: 80vh;
+    min-height: 84vh;
 }
 
 .main-content {
@@ -68,12 +71,12 @@ main {
 }
 
 .logo {
-    width: 55%;
+    width: 45%;
     height: auto;
 }
 
 .input-container {
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
 
 #search-logo {
@@ -100,20 +103,20 @@ main {
 }
 
 #searchbox {
-    border-radius: 17px;
+    border-radius: 25px;
     border: 1px solid #e4e4e4;
     padding: 15px;
     padding-left: 3em;
-
+    padding-top: 10px;
     outline: 0;
     width: 100%;
 
 }
 
 #searchbox:hover,
-#searchbox:active,
+#searchbox:focus,
 .btn-group>input:hover,
-.btn-group>input:active {
+.btn-group>input:focus {
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
     border-color: rgba(223, 225, 229, 0);
 }
@@ -126,21 +129,25 @@ main {
     color: #5f6368;
     background-color: #f2f2f2;
     border-radius: 4px;
-    padding: 1em 1.5em;
+    padding: 0.7em 1.5em;
     border: 0;
     margin: 0 0.5em;
     cursor: pointer;
 }
 
+.language {
+    font-size: 0.8rem;
+}
+
 .lang {
     margin: 0 2px;
-    font-size: 14px;
+    /* font-size: 14px; */
 }
 
 /* ################# footer ################## */
 footer {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     width: 100%;
     background-color: #f2f2f2;
     color: #5f6368;
@@ -169,4 +176,17 @@ footer {
 section>a {
     color: #5f6368;
     margin: 0 5px;
+}
+
+/* ################## responsive ############# */
+@media screen and (max-width:750px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    section {
+        text-align: center;
+    }
+
+
 }
