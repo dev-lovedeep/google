@@ -129,6 +129,7 @@ main {
 
 .btn-group {
     margin: 2em 0;
+    justify-content: center;
 }
 
 .btn-group>input {
